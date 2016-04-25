@@ -9,6 +9,7 @@
 #import "MHPlayerManager.h"
 #import <AVFoundation/AVFoundation.h>
 #import "MHMusic.h"
+#import "MHLyricParser.h"
 
 #define HMMusicUpdateInterval 0.05
 
@@ -23,6 +24,11 @@
  *  定时器
  */
 @property (nonatomic, strong) NSTimer *timer;
+
+/**
+ *  存储歌词模型的数组
+ */
+@property (nonatomic, strong) NSArray *lyrics;
 
 @end
 
@@ -42,7 +48,13 @@
  */
 - (void)preparePlayWithMusic:(MHMusic *)music {
     [self stopUpdateMusicProgress];
-    NSLog(@"%@",music.mp3);
+
+
+    /**
+     *  解析歌词
+     */
+    self.lyrics = [MHLyricParser lyricsWithFileName:music.lrc];
+    
     NSURL *URL = [[NSBundle mainBundle] URLForResource:music.mp3 withExtension:nil];
     NSError *error = nil;
     // 创建播放器

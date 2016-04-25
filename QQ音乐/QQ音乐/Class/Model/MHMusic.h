@@ -16,7 +16,7 @@ typedef enum {
 @interface MHMusic : NSObject
 
 @property (copy, nonatomic) NSString *image;
-@property (copy, nonatomic) NSString *Irc;
+@property (copy, nonatomic) NSString *lrc;
 @property (copy, nonatomic) NSString *mp3;
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSString *singer;

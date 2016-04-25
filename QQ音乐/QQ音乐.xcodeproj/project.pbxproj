@@ -39,6 +39,9 @@
 		404784DE1CCB8DBC00F493BB /* 李克勤.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 404784C91CCB8DBC00F493BB /* 李克勤.jpg */; };
 		404784DF1CCB8DBC00F493BB /* 泡沫.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 404784CA1CCB8DBC00F493BB /* 泡沫.lrc */; };
 		404784E01CCB8DBC00F493BB /* 稳稳的幸福.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 404784CB1CCB8DBC00F493BB /* 稳稳的幸福.lrc */; };
+		405B3F391CCE3D42005F3B2D /* MHLyricParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 405B3F381CCE3D42005F3B2D /* MHLyricParser.m */; };
+		405B3F3C1CCE3D5F005F3B2D /* MHLyric.m in Sources */ = {isa = PBXBuildFile; fileRef = 405B3F3B1CCE3D5F005F3B2D /* MHLyric.m */; };
+		405B3F3F1CCE44EC005F3B2D /* NSDateFormatter+shared.m in Sources */ = {isa = PBXBuildFile; fileRef = 405B3F3E1CCE44EC005F3B2D /* NSDateFormatter+shared.m */; };
 		EB86A95F9D01B8BBEF7C8194 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F612B654D199BEE2FF21B64C /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +87,12 @@
 		404784C91CCB8DBC00F493BB /* 李克勤.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "李克勤.jpg"; sourceTree = "<group>"; };
 		404784CA1CCB8DBC00F493BB /* 泡沫.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "泡沫.lrc"; sourceTree = "<group>"; };
 		404784CB1CCB8DBC00F493BB /* 稳稳的幸福.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "稳稳的幸福.lrc"; sourceTree = "<group>"; };
+		405B3F371CCE3D42005F3B2D /* MHLyricParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLyricParser.h; sourceTree = "<group>"; };
+		405B3F381CCE3D42005F3B2D /* MHLyricParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLyricParser.m; sourceTree = "<group>"; };
+		405B3F3A1CCE3D5F005F3B2D /* MHLyric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHLyric.h; sourceTree = "<group>"; };
+		405B3F3B1CCE3D5F005F3B2D /* MHLyric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHLyric.m; sourceTree = "<group>"; };
+		405B3F3D1CCE44EC005F3B2D /* NSDateFormatter+shared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+shared.h"; sourceTree = "<group>"; };
+		405B3F3E1CCE44EC005F3B2D /* NSDateFormatter+shared.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+shared.m"; sourceTree = "<group>"; };
 		7DDFA05F0BCABBE403F8C413 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F612B654D199BEE2FF21B64C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -134,6 +143,8 @@
 			children = (
 				40011B4F1CCC68AA002F2698 /* NSObject+Model.h */,
 				40011B501CCC68AA002F2698 /* NSObject+Model.m */,
+				405B3F3D1CCE44EC005F3B2D /* NSDateFormatter+shared.h */,
+				405B3F3E1CCE44EC005F3B2D /* NSDateFormatter+shared.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -152,6 +163,8 @@
 			children = (
 				40011B521CCC68F8002F2698 /* MHMusic.h */,
 				40011B531CCC68F8002F2698 /* MHMusic.m */,
+				405B3F3A1CCE3D5F005F3B2D /* MHLyric.h */,
+				405B3F3B1CCE3D5F005F3B2D /* MHLyric.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +176,8 @@
 				40011B561CCC6FE1002F2698 /* MHPlayerManager.m */,
 				40011B581CCC8390002F2698 /* MHFormatter.h */,
 				40011B591CCC8390002F2698 /* MHFormatter.m */,
+				405B3F371CCE3D42005F3B2D /* MHLyricParser.h */,
+				405B3F381CCE3D42005F3B2D /* MHLyricParser.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -393,8 +408,11 @@
 				40011B4E1CCC688B002F2698 /* ViewController.m in Sources */,
 				4047849F1CCB8B8A00F493BB /* main.m in Sources */,
 				40011B511CCC68AA002F2698 /* NSObject+Model.m in Sources */,
+				405B3F3C1CCE3D5F005F3B2D /* MHLyric.m in Sources */,
 				40011B5A1CCC8390002F2698 /* MHFormatter.m in Sources */,
 				40011B571CCC6FE1002F2698 /* MHPlayerManager.m in Sources */,
+				405B3F3F1CCE44EC005F3B2D /* NSDateFormatter+shared.m in Sources */,
+				405B3F391CCE3D42005F3B2D /* MHLyricParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
